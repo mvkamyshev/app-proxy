@@ -1,0 +1,22 @@
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  transport:
+    name: Transport tests
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install test proxy
+        run: brew install sing-box
+      - name: Test SOCKS5 transport and application rules
+        run: python3 Tests/run.py
+      - name: Check whitespace
+        run: git diff --check

@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C0E1BD784FA3090666ACA7E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6487F35EFE4C3B9F5392AF9B /* Cocoa.framework */; };
+		1F8336F1E7AFBDE2F3B99992 /* dev.maxkamyshev.AppProxy.Proxy.systemextension in Embed System Extension */ = {isa = PBXBuildFile; fileRef = 830A104EC8A1E9CB5DDC477A /* dev.maxkamyshev.AppProxy.Proxy.systemextension */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DD260E93BA90E61BE587839 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFE952A360B4EC07E91C1B /* main.swift */; };
+		43E23AE4942F732BA9FCC34C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3074B4F802F33148CA22362 /* Configuration.swift */; };
+		5999D7B5541345B675DFC92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF6048F9AFB7985B08367D2 /* Foundation.framework */; };
+		5B9BED1CBF5C6DA092154599 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6487F35EFE4C3B9F5392AF9B /* Cocoa.framework */; };
+		5C27B3F480FBDE676D829873 /* SOCKS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55726F66680884967801813D /* SOCKS.swift */; };
+		5F7E4B87A5A7F501242E6BE2 /* SOCKS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55726F66680884967801813D /* SOCKS.swift */; };
+		7A6F657D17C9A9E72319AE12 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A0D04D11CCBAA491B0B763 /* NetworkExtension.framework */; };
+		9A4280BA7F0743818DF57F44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE941D280C7410A952EDF2B5 /* Security.framework */; };
+		ACFAD11EEB7951A33829EA46 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3074B4F802F33148CA22362 /* Configuration.swift */; };
+		ADD990759D0B43A3AF488216 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB72B4B487C93A0264F6B31 /* NetworkExtension.framework */; };
+		C237610BDCF852F5237422E3 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E29F89C9603AB4CD7C85B1 /* Network.framework */; };
+		D8071FA14B1D981F54108CFD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA70B0CDDDC4D9D8061B1973 /* Security.framework */; };
+		DFBB072735BB69BFB967C429 /* TransparentProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94861B8BEC4145E8ED7EF6 /* TransparentProxy.swift */; };
+		E65F99732B613803E5F4ED81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CAE46B6A0200BCC30603CE /* Foundation.framework */; };
+		EED65AE95E2037DD64095862 /* AppProxyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523256652A5142C7AB4DAEDF /* AppProxyApp.swift */; };
+		F0285ED66AD8C7F66416DCD9 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2823332368871280CF29F /* Network.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554BC7C82059709E3200D040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7965B5F99904F64621D902C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4CF9E4779271D9270491B1;
+			remoteInfo = Proxy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98E0BAC237B215477729ABBA /* Embed System Extension */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Library/SystemExtensions";
+			dstSubfolderSpec = 16;
+			files = (
+				1F8336F1E7AFBDE2F3B99992 /* dev.maxkamyshev.AppProxy.Proxy.systemextension in Embed System Extension */,
+			);
+			name = "Embed System Extension";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00E29F89C9603AB4CD7C85B1 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		05D2823332368871280CF29F /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		13A0D04D11CCBAA491B0B763 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		24CAE46B6A0200BCC30603CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2AF6048F9AFB7985B08367D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		523256652A5142C7AB4DAEDF /* AppProxyApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppProxyApp.swift; path = App/AppProxyApp.swift; sourceTree = "<group>"; };
+		55726F66680884967801813D /* SOCKS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOCKS.swift; path = Shared/SOCKS.swift; sourceTree = "<group>"; };
+		5A2403AD61FC5C846083812B /* AppProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6487F35EFE4C3B9F5392AF9B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		830A104EC8A1E9CB5DDC477A /* dev.maxkamyshev.AppProxy.Proxy.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = dev.maxkamyshev.AppProxy.Proxy.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D94861B8BEC4145E8ED7EF6 /* TransparentProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransparentProxy.swift; path = Extension/TransparentProxy.swift; sourceTree = "<group>"; };
+		BA70B0CDDDC4D9D8061B1973 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CEB72B4B487C93A0264F6B31 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		D3074B4F802F33148CA22362 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Shared/Configuration.swift; sourceTree = "<group>"; };
+		FBCFE952A360B4EC07E91C1B /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = main.swift; path = Extension/main.swift; sourceTree = "<group>"; };
+		FE941D280C7410A952EDF2B5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		098A79B50384F19B533B5135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0E1BD784FA3090666ACA7E /* Cocoa.framework in Frameworks */,
+				5999D7B5541345B675DFC92B /* Foundation.framework in Frameworks */,
+				F0285ED66AD8C7F66416DCD9 /* Network.framework in Frameworks */,
+				ADD990759D0B43A3AF488216 /* NetworkExtension.framework in Frameworks */,
+				D8071FA14B1D981F54108CFD /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		242ABA8D4CABA4F3394B709C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9BED1CBF5C6DA092154599 /* Cocoa.framework in Frameworks */,
+				E65F99732B613803E5F4ED81 /* Foundation.framework in Frameworks */,
+				C237610BDCF852F5237422E3 /* Network.framework in Frameworks */,
+				7A6F657D17C9A9E72319AE12 /* NetworkExtension.framework in Frameworks */,
+				9A4280BA7F0743818DF57F44 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AB3DBDE6326808ADAF8717D = {
+			isa = PBXGroup;
+			children = (
+				700B099F9F849A4B739D32C7 /* Products */,
+				FD2A4E14E790A73A8B2B9134 /* Frameworks */,
+				55726F66680884967801813D /* SOCKS.swift */,
+				D3074B4F802F33148CA22362 /* Configuration.swift */,
+				523256652A5142C7AB4DAEDF /* AppProxyApp.swift */,
+				9D94861B8BEC4145E8ED7EF6 /* TransparentProxy.swift */,
+				FBCFE952A360B4EC07E91C1B /* main.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		5FD45415FDCEBCC826311B36 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				6487F35EFE4C3B9F5392AF9B /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		700B099F9F849A4B739D32C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A2403AD61FC5C846083812B /* AppProxy.app */,
+				830A104EC8A1E9CB5DDC477A /* dev.maxkamyshev.AppProxy.Proxy.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD2A4E14E790A73A8B2B9134 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FD45415FDCEBCC826311B36 /* OS X */,
+				2AF6048F9AFB7985B08367D2 /* Foundation.framework */,
+				05D2823332368871280CF29F /* Network.framework */,
+				CEB72B4B487C93A0264F6B31 /* NetworkExtension.framework */,
+				BA70B0CDDDC4D9D8061B1973 /* Security.framework */,
+				24CAE46B6A0200BCC30603CE /* Foundation.framework */,
+				00E29F89C9603AB4CD7C85B1 /* Network.framework */,
+				13A0D04D11CCBAA491B0B763 /* NetworkExtension.framework */,
+				FE941D280C7410A952EDF2B5 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2362B47D58A50C1FBC464A9D /* AppProxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC1009BDF649DBF33750CC32 /* Build configuration list for PBXNativeTarget "AppProxy" */;
+			buildPhases = (
+				1E47D89D4267DBE2F312B3D5 /* Sources */,
+				098A79B50384F19B533B5135 /* Frameworks */,
+				FC5300A507E65AC5A92BCFA5 /* Resources */,
+				98E0BAC237B215477729ABBA /* Embed System Extension */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC623B094E872AD9AFDD6F2E /* PBXTargetDependency */,
+			);
+			name = AppProxy;
+			productName = AppProxy;
+			productReference = 5A2403AD61FC5C846083812B /* AppProxy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB4CF9E4779271D9270491B1 /* Proxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EE6D113452EF61AC41067CC /* Build configuration list for PBXNativeTarget "Proxy" */;
+			buildPhases = (
+				3F1C492D13B8479B28AF221B /* Sources */,
+				242ABA8D4CABA4F3394B709C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Proxy;
+			productName = Proxy;
+			productReference = 830A104EC8A1E9CB5DDC477A /* dev.maxkamyshev.AppProxy.Proxy.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7965B5F99904F64621D902C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 6408CC42C47DAEEE25AFC486 /* Build configuration list for PBXProject "AppProxy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AB3DBDE6326808ADAF8717D;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 700B099F9F849A4B739D32C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2362B47D58A50C1FBC464A9D /* AppProxy */,
+				DB4CF9E4779271D9270491B1 /* Proxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC5300A507E65AC5A92BCFA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E47D89D4267DBE2F312B3D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7E4B87A5A7F501242E6BE2 /* SOCKS.swift in Sources */,
+				ACFAD11EEB7951A33829EA46 /* Configuration.swift in Sources */,
+				EED65AE95E2037DD64095862 /* AppProxyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1C492D13B8479B28AF221B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C27B3F480FBDE676D829873 /* SOCKS.swift in Sources */,
+				43E23AE4942F732BA9FCC34C /* Configuration.swift in Sources */,
+				DFBB072735BB69BFB967C429 /* TransparentProxy.swift in Sources */,
+				2DD260E93BA90E61BE587839 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC623B094E872AD9AFDD6F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Proxy;
+			target = DB4CF9E4779271D9270491B1 /* Proxy */;
+			targetProxy = 554BC7C82059709E3200D040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4274382E891C532D5BE8BFEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/AppProxy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.maxkamyshev.AppProxy;
+				PRODUCT_NAME = "App Proxy";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4BA5A0B98AB9FDC1C9A7F0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/AppProxy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.maxkamyshev.AppProxy;
+				PRODUCT_NAME = "App Proxy";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76663C3B1D55C3803457A659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Proxy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXECUTABLE_NAME = "$(PRODUCT_NAME)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/SystemExtensions";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.maxkamyshev.AppProxy.Proxy;
+				PRODUCT_MODULE_NAME = Proxy;
+				PRODUCT_NAME = dev.maxkamyshev.AppProxy.Proxy;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = systemextension;
+			};
+			name = Release;
+		};
+		B76E3BAC8A643D74E8017C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B979209290021D21A62BC92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F133FA9B4A22D36BE677ABC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Proxy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXECUTABLE_NAME = "$(PRODUCT_NAME)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/SystemExtensions";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.maxkamyshev.AppProxy.Proxy;
+				PRODUCT_MODULE_NAME = Proxy;
+				PRODUCT_NAME = dev.maxkamyshev.AppProxy.Proxy;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = systemextension;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EE6D113452EF61AC41067CC /* Build configuration list for PBXNativeTarget "Proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76663C3B1D55C3803457A659 /* Release */,
+				F133FA9B4A22D36BE677ABC7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6408CC42C47DAEEE25AFC486 /* Build configuration list for PBXProject "AppProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B979209290021D21A62BC92D /* Debug */,
+				B76E3BAC8A643D74E8017C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC1009BDF649DBF33750CC32 /* Build configuration list for PBXNativeTarget "AppProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4274382E891C532D5BE8BFEF /* Release */,
+				4BA5A0B98AB9FDC1C9A7F0DA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7965B5F99904F64621D902C0 /* Project object */;
+}
